@@ -1,6 +1,6 @@
 import React from "react";
 
-class StatefulGreeting extends React.Component{ 
+class StatefulGreetingWithCallback extends React.Component{ 
 
     constructor(props) {
         super(props);
@@ -14,7 +14,13 @@ class StatefulGreeting extends React.Component{
         this.setState({
             introduction: "GoodBye!",
             buttonText: "Enter"
+        // IF need to run code aftert state has been changed pass in a callback function and not aftwards
+        }, ()=>{
+            // Logs new state
+            console.log('new state', this.state.introduction);
+            console.log('new stat', this.state.buttonText)
         })
+        // After which logs the previous state
         console.log(this.state.introduction);
         console.log(this.state.buttonText)
     }
@@ -29,4 +35,4 @@ class StatefulGreeting extends React.Component{
     }
 }
 
-export default StatefulGreeting;
+export default StatefulGreetingWithCallback;
