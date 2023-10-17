@@ -31,13 +31,14 @@ function RenderingLists() {
     
     <div>
         {booklist.map(book => {
-            return <h2>{book}</h2>
+            return <h2 key={book}>{book}</h2>
         })}
         <hr />
         {
             books.map( book => {
                 return(
-                    <div>
+                    // Always use a key when creating a list in react and must always be in the outer most element that will be repeated
+                    <div key={book.title}>
                         <h5>{book.title}</h5>
                         <p>{book.author}</p>
                         <p>{book.pages}</p>
@@ -50,7 +51,7 @@ function RenderingLists() {
         {/* rendering list in with its own component Book.js */}
         {
            books.map(book => {
-            return <Book book={book} />
+            return <Book key={book.title} book={book} />
            }) 
         }
     </div>
