@@ -24,6 +24,7 @@ import UseStateWithObjects from './components/UseStateWithObjects';
 import HooksCounter from './components/HooksCounter';
 import ClassCounter from './components/ClassCounter';
 import UseEffectCounter from './components/UseEffectCounter';
+import UseEffectCountContainer from './components/UseEffectCountContainer';
 
 function App() {
   return (
@@ -51,7 +52,8 @@ function App() {
       {/* <HooksCounter /> */}
       {/* <UseStateWithObjects /> */}
       {/* <ClassCounter /> */}
-      <UseEffectCounter />
+      {/* <UseEffectCounter /> */}
+      <UseEffectCountContainer />
     </div>
   );
 }
