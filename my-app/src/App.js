@@ -50,7 +50,7 @@ function App() {
       {/* <UseStateWithArrays /> */}
       {/* <HooksCounter /> */}
       {/* <UseStateWithObjects /> */}
-      <ClassCounter />
+      {/* <ClassCounter /> */}
       <UseEffectCounter />
     </div>
   );
