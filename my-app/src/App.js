@@ -26,6 +26,7 @@ import ClassCounter from './components/ClassCounter';
 import UseEffectCounter from './components/UseEffectCounter';
 import UseEffectCountContainer from './components/UseEffectCountContainer';
 import HTTPRequests from './components/HTTPRequests';
+import HTTPPosts from './components/HTTPPosts';
 
 function App() {
   return (
@@ -55,7 +56,8 @@ function App() {
       {/* <ClassCounter /> */}
       {/* <UseEffectCounter /> */}
       {/* <UseEffectCountContainer /> */}
-      <HTTPRequests />
+      {/* <HTTPRequests /> */}
+      <HTTPPosts />
     </div>
   );
 }
